@@ -7,7 +7,6 @@ import dlib
 import cv2
 from threading import Lock, Thread
 
-
 class FaceDetection(Thread):
 
     def has_face(self): #funkcija koja vraća flag lica

@@ -8,6 +8,7 @@ import numpy as np
 import image
 from threading import Lock, Thread
 
+
 class MotionDetection(Thread):
 
     def has_movement(self):

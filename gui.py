@@ -297,14 +297,14 @@ class Gui:
                 self.temperatureLbl.config(text=temperature2)
             if self.location != location2:
                 if location2 == ", ":
-                    self.location = "Cannot Pinpoint Location"
-                    self.locationLbl.config(text="Cannot Pinpoint Location")
+                    self.location = "Nemoguće dohvatiti lokaciju"
+                    self.locationLbl.config(text="Nemoguće dohvatiti lokaciju")
                 else:
                     self.location = location2
                     self.locationLbl.config(text=location2)
         except Exception as e:
             traceback.print_exc()
-            print ("Error: %s. Cannot get weather." % e)
+            print ("Error: %s. Ne mogu dohvatiti prognozu." % e)
 
         self.root.after(600000, self.get_weather)
 

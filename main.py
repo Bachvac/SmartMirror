@@ -13,6 +13,7 @@ import cv2
 from tkinter import *
 import time
 
+
 GUI_HAS_FACE = False
 
 from face_detection import FaceDetection

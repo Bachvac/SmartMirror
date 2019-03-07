@@ -8,7 +8,7 @@ def scrape_me():
     opisi = soup.findAll("div", {"class": "summary"})
     datumi = soup.find_all('dd')
     file = open("data.txt", "w")
-    file.write("###\n") #kao neki delimiter između novih vijesti
+    file.write("###\n") #neki delimiter između novih vijesti
     for i in range(len(naslovi)):
         vijest = datumi[i].get_text() + naslovi[i].get_text() + opisi[i].get_text() + "\n" + "###\n"
         file.write(vijest)
